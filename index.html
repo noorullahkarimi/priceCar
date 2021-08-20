@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" />
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="form" id="form">
+            <div id="loading"></div>
+            <div class="line-cal">claculate product</div>
+            <label for="make" id="choose">choose car:</label><br>
+            <select class="select" id="car">
+                <option value="">select one of these car</option>
+                <option value="toyota">toyota</option>
+                <option value="ford">ford</option>
+                <option value="hyunday">hyunday</option>
+            </select>
+            <div>
+                <label for="year">product year:</label><br>
+                <select class="select" id="years">
+                    <!-- <option value="1990">1990</option>
+                    <option value="1990">1990</option>
+                    <option value="1990">1990</option> -->
+                </select>
+                <br>
+                <p>choose your type:</p>
+                <label class="label" for="type">full option
+                    <input type="radio" name="radio" checked>
+                </label>
+                <br>
+                <label class="label" for="type">normal
+                    <input type="radio" name="radio">
+                </label>
+
+                <br>
+                <br>
+                <input type="button" value="calculate" class="submit">
+            </div>
+        </div>
+        <div class="answer">
+            <div class="line-cal" >your price is:</div>
+            <div id="factor"></div>
+        </div>
+        <script src="js.js" type="text/javascript"></script>
+</body>
+
+
+</html>
